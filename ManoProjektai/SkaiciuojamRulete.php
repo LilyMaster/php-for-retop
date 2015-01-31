@@ -11,23 +11,6 @@
     <input name="statymas">Statymas</input>
 </form>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <?php
 
     $iskrito; // Dabar pasirodes skaitmuo
