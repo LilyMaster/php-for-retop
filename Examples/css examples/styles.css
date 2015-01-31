@@ -1,0 +1,18 @@
+h1 {
+    color:blue;
+    font-family:verdana;
+    font-size:300%;
+}
+
+/* here p01 is id in <p id="p01"> */
+p#p01  {
+    color:red;
+    font-family:courier;
+    font-size:160%;
+}
+/* here divClass is a class in <div class="divClass"> */
+div.divClass {
+    color:darkmagenta;
+    font-family:times;
+    font-size:120%;
+}

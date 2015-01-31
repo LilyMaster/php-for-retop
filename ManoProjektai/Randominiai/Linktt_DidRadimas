@@ -1,0 +1,55 @@
+//----------------------------------------------------
+int didziausias (int A[], int i) {
+	int did = A[0];
+	for (int j = 0; j <= i; j++) {
+		if (A[j] >= did) {
+			did = A[j];
+		}
+	}
+	return did;
+}
+//-----------------------------------------------------
+
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+const char CDfv[] = "Input.txt";
+const char CRfv[] = "Output.txt";
+//-----------------------------------------------------
+void skaityti (const char fv[], int A[], int &i) {
+	ifstream in(fv);
+	i = 0;
+	while (!in.eof()) {
+		i++;
+		in >> A[i];
+	}
+}
+//-----------------------------------------------------
+void rikiuok (int A[], int &i) {
+	int ind;
+	for (int n = 1; n <= i; n++) {
+		for (int j = 1; j <= i; j++) {
+			if (A[j] <= A[j-1]) {
+				ind = A[j-1];
+				A[j-1] = A[j];
+				A[j] = ind;
+			}
+		}
+	}
+}
+//----------------------------------------------------
+int main(int argc, char** argv) {
+	int A[100], ind;
+	int i;
+	skaityti(CDfv, A, i);
+	rikiuok(A, i);
+	for (int j = 1; j < i; j++) {
+		cout << A[j] << endl;
+	}
+	cout << "Didziausia reiksme :" << A[i] << endl;
+	system("PAUSE");
+	return 0;
+}

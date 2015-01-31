@@ -1,0 +1,72 @@
+POST:
+
+kapitalas.com	FALSE	/butai/	FALSE	1456672116  cookieSQL	++skyrius%3D%27butai%27+AND+veiksmas%3D%27isnuomoja%27+AND+aktyvuotas%3D%27true%27++AND+miestas%3D%27Kaunas%27+ORDER+BY++autoid+DESC
+
+multipart/form-data
+kapitalas	true
+skyrius	kambariai
+skelbejas	494250589898
+veiksmas	parduoda
+tarpininkai	Be tarp.
+kaina	987654
+vietos	9999
+plotas	456
+vanduo	
+kiti	Skelb tekstas
+miestas	Kaunas
+rajonas	Jiesia
+rajonasVilnius	
+rajonasKaunas	Jiesia
+rajonasKlaipeda	
+gatve	Interneto
+telefonas	+678 846 65478
+pastas	netikras.spamui@gmail.com
+vardas	Lol-2
+laikytiki	2015.02.07
+slaptazodis	abcd1234
+foto	
+x	17
+y	10
+Source
+-----------------------------14697781915337 Content-Disposition: form-data; name="kapitalas" true -----------------------------14697781915337 Content-Disposition: form-data; name="skyrius" kambariai -----------------------------14697781915337 Content-Disposition: form-data; name="skelbejas" 494250589898 -----------------------------14697781915337 Content-Disposition: form-data; name="veiksmas" parduoda -----------------------------14697781915337 Content-Disposition: form-data; name="tarpininkai" Be tarp. -----------------------------14697781915337 Content-Disposition: form-data; name="kaina" 987654 -----------------------------14697781915337 Content-Disposition: form-data; name="vietos" 9999 -----------------------------14697781915337 Content-Disposition: form-data; name="plotas" 456 -----------------------------14697781915337 Content-Disposition: form-data; name="vanduo" -----------------------------14697781915337 Content-Disposition: form-data; name="kiti" Skelb tekstas -----------------------------14697781915337 Content-Disposition: form-data; name="miestas" Kaunas -----------------------------14697781915337 Content-Disposition: form-data; name="rajonas" Jiesia -----------------------------14697781915337 Content-Disposition: form-data; name="rajonasVilnius" -----------------------------14697781915337 Content-Disposition: form-data; name="rajonasKaunas" Jiesia -----------------------------14697781915337 Content-Disposition: form-data; name="rajonasKlaipeda" -----------------------------14697781915337 Content-Disposition: form-data; name="gatve" Interneto -----------------------------14697781915337 Content-Disposition: form-data; name="telefonas" +678 846 65478 -----------------------------14697781915337 Content-Disposition: form-data; name="pastas" netikras.spamui@gmail.com -----------------------------14697781915337 Content-Disposition: form-data; name="vardas" Lol-2 -----------------------------14697781915337 Content-Disposition: form-data; name="laikytiki" 2015.02.07 -----------------------------14697781915337 Content-Disposition: form-data; name="slaptazodis" abcd1234 -----------------------------14697781915337 Content-Disposition: form-data; name="foto"; filename="" Content-Type: application/octet-stream -----------------------------14697781915337 Content-Disposition: form-data; name="x" 17 -----------------------------14697781915337 Content-Disposition: form-data; name="y" 10 -----------------------------14697781915337--
+
+
+
+
+
+
+
+
+
+cookieName 201501080134-Lol-3
+
+
+multipart/form-data
+kapitalas	true
+skyrius	kambariai
+skelbejas	16985728123
+veiksmas	parduoda
+tarpininkai	Be tarp.
+kaina	78654
+vietos	9999
+plotas	53
+vanduo	
+kiti	Texetas
+miestas	Kaunas
+rajonas	Centras
+rajonasVilnius	
+rajonasKaunas	
+rajonasKlaipeda	
+gatve	Interneto
+telefonas	+678 846 14965
+pastas	netikras.spamui@gmail.com
+vardas	Lol-3
+laikytiki	2015.02.07
+slaptazodis	test1234
+foto	
+x	34
+y	6
+
+
+Source
+-----------------------------71381999412890 Content-Disposition: form-data; name="kapitalas" true -----------------------------71381999412890 Content-Disposition: form-data; name="skyrius" kambariai -----------------------------71381999412890 Content-Disposition: form-data; name="skelbejas" 16985728123 -----------------------------71381999412890 Content-Disposition: form-data; name="veiksmas" parduoda -----------------------------71381999412890 Content-Disposition: form-data; name="tarpininkai" Be tarp. -----------------------------71381999412890 Content-Disposition: form-data; name="kaina" 78654 -----------------------------71381999412890 Content-Disposition: form-data; name="vietos" 9999 -----------------------------71381999412890 Content-Disposition: form-data; name="plotas" 53 -----------------------------71381999412890 Content-Disposition: form-data; name="vanduo" -----------------------------71381999412890 Content-Disposition: form-data; name="kiti" Texetas -----------------------------71381999412890 Content-Disposition: form-data; name="miestas" Kaunas -----------------------------71381999412890 Content-Disposition: form-data; name="rajonas" Centras -----------------------------71381999412890 Content-Disposition: form-data; name="rajonasVilnius" -----------------------------71381999412890 Content-Disposition: form-data; name="rajonasKaunas" -----------------------------71381999412890 Content-Disposition: form-data; name="rajonasKlaipeda" -----------------------------71381999412890 Content-Disposition: form-data; name="gatve" Interneto -----------------------------71381999412890 Content-Disposition: form-data; name="telefonas" +678 846 14965 -----------------------------71381999412890 Content-Disposition: form-data; name="pastas" netikras.spamui@gmail.com -----------------------------71381999412890 Content-Disposition: form-data; name="vardas" Lol-3 -----------------------------71381999412890 Content-Disposition: form-data; name="laikytiki" 2015.02.07 -----------------------------71381999412890 Content-Disposition: form-data; name="slaptazodis" test1234 -----------------------------71381999412890 Content-Disposition: form-data; name="foto"; filename="" Content-Type: application/octet-stream -----------------------------71381999412890 Content-Disposition: form-data; name="x" 34 -----------------------------71381999412890 Content-Disposition: form-data; name="y" 6 -----------------------------71381999412890--

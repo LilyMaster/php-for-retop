@@ -1,0 +1,19 @@
+BODY { FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif }
+TABLE { FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif }
+TR { FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif }
+TD { FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif }
+A:active { FONT-SIZE: 10px; COLOR: black; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif }
+A:visited {	FONT-SIZE: 10px; COLOR: black; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none }
+A:link { FONT-SIZE: 10px; COLOR: blue; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none }
+A:hover { FONT-SIZE: 10px; COLOR: red; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none }
+A.skyrius { display:block; text-align:left; text-decoration:none; BORDER:none; border:solid 1px #d4d5e8; FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; }
+A.skyrius:hover { border:solid 1px #000000; text-decoration:none; background-color:#081375; FONT-SIZE: 12px; COLOR: white; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; }
+.class1 { FONT: bold 9pt "Helvetica", san-serif; COLOR: #000000 }
+.class2 { FONT: 8pt "Helvetica", san-serif; COLOR: #000000 }
+.menuskin{ position:absolute; width:165px; background-color:#d4d5e8; border:1px solid black; line-height:18px; z-index:100; visibility:hidden; }
+.menuskin a{ text-decoration:none; color:black; padding-left:10px; padding-right:10px; }
+#mouseoverstyle{ background-color:highlight; }
+#mouseoverstyle a{ color:white; }
+
+
+
