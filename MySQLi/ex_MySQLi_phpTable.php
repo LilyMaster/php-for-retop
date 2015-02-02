@@ -40,6 +40,7 @@ if ($conn->connect_error) {
     echo 'Connected to db: \'' . $dbname . '\' as \'' . $username . "' on '".$server."'";
     echo "<br />";
 }
+$conn->set_charset("utf8");
 
 $sql = '
     SELECT *

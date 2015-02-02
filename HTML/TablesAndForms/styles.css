@@ -1,0 +1,33 @@
+.wraper {
+    margin: auto;
+    width: 100%;
+}
+
+.table_1 { /*Just a wrapper... The table does not spread to the width provided*/
+    width: 90%;
+    margin: auto;
+}
+/* Now the table itself conforms to the width*/
+table.MySQL_Table {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#idForm td, th {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+#idform th {
+    font-weight: bold;
+}
+
+.formForInsert {
+    width: 600px;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid yellowgreen;
+}

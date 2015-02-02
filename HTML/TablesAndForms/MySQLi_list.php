@@ -26,10 +26,7 @@
 <body>
 <p>
 <?php
-$server = "localhost";
-$username = "root";
-$password = "MySQL";
-$dbname = "manodb";
+require_once('vars.php');
 
 // Create connection
 $conn = new mysqli($server, $username, $password, $dbname);
@@ -40,7 +37,6 @@ if ($conn->connect_error) {
     echo 'Connected to db: \'' . $dbname . '\' as \'' . $username . "' on '".$server."'";
     echo "<br />";
 }
-$conn->set_charset("utf8");
 
 $sql = '
     SELECT *
