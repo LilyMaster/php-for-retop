@@ -1,0 +1,115 @@
+Array
+(
+    [showgooglemaps] => 0
+    [gm_lat] => 54.68939
+    [gm_lng] => 25.280020000000036
+    [house_number] =>
+    [data] => Array
+        (
+            [id] => Array
+                (
+                    [adresas_1] => 229001
+                    [adresas_2] =>
+                    [adresas_3] =>
+                    [kambariu_skaicius_1] => 100018876
+                    [busto_bukle] => 100009022
+                    [buto_aukstas_1] => 100018894
+                    [nt_butai_bukle_nuomoja] => 126702312
+                    [aukstu_skaicius_pastate_1] => 100018895
+                    [sildymas_1] =>
+                    [sildymas_2] => 0
+                    [nuomotojas] => 100011023
+                )
+
+            [text] => Array
+                (
+                    [kitos_pastabos] => Nedidelis butukas Å iauliÅ³ pakraÅ¡tyje. Netoli Akropolis.
+                    [busto_plotas_m_1] => 51
+                    [statybos_metai] =>
+                    [kaina_1] => 8504
+                    [kaina_4] => 29363
+                    [kaina_2] => EUR
+                    [mobilus_telefonas] => 64379063
+                )
+
+            [ypatybes] => Array
+                (
+                    [0] =>
+                )
+
+            [iranga] => Array
+                (
+                    [0] =>
+                )
+
+        )
+
+    [video_id] =>
+    [packet] => Array
+        (
+            [43] => Array
+                (
+                    [price] => 59212
+                )
+
+            [value] => Array
+                (
+                    [mini_packet] => 0
+                    [optimal_packet] => 0
+                    [vip_packet] => 0
+                )
+
+            [44] => Array
+                (
+                    [price] => 59222
+                )
+
+            [45] => Array
+                (
+                    [price] => 59232
+                )
+
+            [104] => Array
+                (
+                    [price] => 61182
+                )
+
+            [105] => Array
+                (
+                    [price] => 61192
+                )
+
+            [117] => Array
+                (
+                    [price] => 61432
+                )
+
+        )
+
+    [expire_time] =>
+    [current_time] => 1421260843
+    [siteadvertise] => Array
+        (
+            [value] => Array
+                (
+                    [104] => 0
+                    [105] => 0
+                    [117] => 0
+                )
+
+        )
+
+    [mail] => Array
+        (
+            [email] => lilymaster@gmail.com
+        )
+
+    [ntspecial] => 0
+    [isEdit] =>
+    [isCreate] => 1
+    [ad_id] => 51875342
+    [category_id] => 1393
+)
+Array
+(
+)

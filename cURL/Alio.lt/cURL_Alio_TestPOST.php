@@ -1,6 +1,7 @@
 <?php
 
 include_once(DOCROOT . 'simple_html_dom.php');
+include_once(DOCROOT . '/../includes/cURL_functions.php');
 
 function echocURLInfo($ch) {
     echo '<pre>';
@@ -15,15 +16,6 @@ function prePrintR($text){
     echo "</pre>";
 }
 
-function getUA(){
-    $userAgent = array( // See more @http://techblog.willshouse.com/2012/01/03/most-common-user-agents/
-        "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36", // Chrome 39.0 Win7 64-bit
-        "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0", // Firefox 34.0 Win7 64-bit
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36", // Chrome 39.0 MacOSX
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5" // Safari 8.0 MacOSX
-    );
-    return $userAgent[rand(0,max(array_keys($userAgent)))];
-}
 $UA = getUA(); // Nustatome "User-Agent: "
 
 function http_build_query_for_curl( $arrays, &$new = array(), $prefix = null ) {
