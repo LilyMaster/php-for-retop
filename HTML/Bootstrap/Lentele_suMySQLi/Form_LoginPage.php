@@ -41,7 +41,7 @@
             <h2 class="form-heading">Įveskite informaciją patalpinimui</h2>
             <label for="vardas" class="sr-only">Vardas</label>
             <input type="text" class="form-control" name ="vardas" placeholder="Vardas" required autofocus>
-            <label for="surname" class="sr-only">Password</label>
+            <label for="surname" class="sr-only">Pavardė</label>
             <input type="text" class="form-control" name="surname" placeholder="Pavardė" required>
             <button class="btn btn-lg btn-primary btn-block" id="submit_addEntry" onClick="">Pridėti info</button>
         </form>
