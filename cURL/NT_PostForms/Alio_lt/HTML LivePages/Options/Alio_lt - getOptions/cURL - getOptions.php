@@ -22,8 +22,8 @@ function http_build_query_for_curl( $arrays, &$new = array(), $prefix = null ) {
 }
 
 $miestai = array(
-    array(228626, 228822, 229085, 229001, 229153, 228709, 229063), // Miestai
-    array(228949, 228713, 229189, 228884, 229114, 228710, 228662, 229200, 228787, 228957, 229044, 228871, 228915, 228834, 228887, 228980, 229064, 229076, 229123, 228809, 228725, 228892, 228776, 229213, 229097, 229056, 228992, 229154, 229130, 228760, 228797, 229004, 228858, 228754, 229142, 229087, 229020, 228742, 228648, 228598, 229167, 228698, 228902, 228672, 229225, 229178, 228920, 228584, 228968, 229029, 229098, 228575, 228611) // Rajonai
+    'DidMiestai' => array(228626, 228822, 229085, 229001, 229153, 228709, 229063), // Miestai
+    'AdmVienetai' => array(228949, 228713, 229189, 228884, 229114, 228710, 228662, 229200, 228787, 228957, 229044, 228871, 228915, 228834, 228887, 228980, 229064, 229076, 229123, 228809, 228725, 228892, 228776, 229213, 229097, 229056, 228992, 229154, 229130, 228760, 228797, 229004, 228858, 228754, 229142, 229087, 229020, 228742, 228648, 228598, 229167, 228698, 228902, 228672, 229225, 229178, 228920, 228584, 228968, 229029, 229098, 228575, 228611) // Rajonai
     //,array(91, 92, 153, 353373) //Kitos šalys - ir taip gerai
 );
 
@@ -68,7 +68,7 @@ $html = cURL_ping_html($url, $referer, $UA, $ch);
 //$file = curl_file_create('testfile.jpg', 'image/jpeg', "test_file_name");*/
 //$query = '';
 
-foreach($miestai[0] as $miestoID){
+foreach($miestai['DidMiestai'] as $miestoID){
     $post_data = array (
         'id' => '',
         'values[]' => $miestoID
@@ -77,12 +77,12 @@ foreach($miestai[0] as $miestoID){
     $url .= http_build_query($post_data);
     $html = cURL_ping_html($url, $referer, $UA, $ch); // post action
     //echo $url.'\n';
-    $failas = fopen(DOCROOT . "Miestai/$miestoID.json", "w");;
+    $failas = fopen(DOCROOT . "Seniunija/$miestoID.json", "w");;
     fwrite($failas, $html[1]);
     fclose($failas);
 }
 
-foreach($miestai[1] as $miestoID){
+foreach($miestai['AdmVienetai'] as $miestoID){
     $post_data = array (
         'id' => '',
         'values[]' => $miestoID
@@ -91,7 +91,7 @@ foreach($miestai[1] as $miestoID){
     $url .= http_build_query($post_data);
     $html = cURL_ping_html($url, $referer, $UA, $ch); // post action
     //echo $url.'\n';
-    $failas = fopen(DOCROOT . "AdmVienetai/$miestoID.json", "w");;
+    $failas = fopen(DOCROOT . "Seniunija/$miestoID.json", "w");;
     fwrite($failas, $html[1]);
     fclose($failas);
 }
