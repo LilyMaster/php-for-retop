@@ -1,0 +1,21 @@
+<div style="background: #400; color: #FFF; font-size: 12px; padding: 5px;">1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* )
+				  GROUP BY
+						B.street_id
+				  ORDER BY
+						B.name ASC,
+						B.i' at line 10<br />SELECT
+						A.item_id,
+						A.street_id,
+						B.name
+				  FROM
+				  		address_relation A
+				  INNER JOIN address_streets B
+				  		ON A.street_id = B.street_id AND B.active = 1
+				  WHERE
+				  		A.item_id IN ( * )
+				  GROUP BY
+						B.street_id
+				  ORDER BY
+						B.name ASC,
+						B.item_sort ASC
+				</div>[]
