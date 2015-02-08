@@ -1,6 +1,9 @@
 Photo uploadinama anksčiau už visą skelbimą - jį kuriant (pvz. Kambarių nuoma http://www.alio.lt/iveskite_skelbima.html?id=1553),
-kreipiamasi į http://www.alio.lt/public/photos/display.html?id=51945273. ID yra skelbimo numeris jų sistemoje.
+kreipiamasi į http://www.alio.lt/public/photos/uploadifyupload.html?id=51945273. ID yra skelbimo numeris jų sistemoje.
+
+Po kreipimosi dar reikia padaryti display.html?id=
 
 Formatas - -----------------------------15740369822686 Content-Disposition: form-data; name="file"; filename="0fc0181c9d175d203308ed2a446a490e.jpg" Content-Type: image/jpeg ||Čia jau paveikslas|| ÿØÿà�JFI
 
 Kad pačio skelbimo metu kur nors figūruotų tos foto - nematyti. Reikia išbandyti ir pamatysim.
+

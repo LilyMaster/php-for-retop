@@ -72,17 +72,18 @@ $referer = 'http://www.alio.lt/iveskite_skelbima.html?id=1553';
 
 $dir = DOCROOT . 'images/';
 $visiFailai = array_slice(scandir($dir), 2);
-foreach ($visiFailai as $failas){
-    $url = 'http://www.alio.lt/public/photos/uploadifyupload.html?id=' . $skelbimoID;
-    $cfile = curl_file_create($dir . "$failas",'image/jpeg',"$failas");
-    //$cfile = curl_file_create("cats.jpg",'image/jpeg',"satohasdltua.jpg");
-    $query = array('file' => $cfile);
-    $html = cURL_post($url, $referer, $UA, $query, $ch); // post action
-    unset($query);
+//foreach ($visiFailai as $failas){
+//$cfile = curl_file_create("$failas",'image/jpeg',"$failas");
+$cfile = curl_file_create("cats.jpg",'image/jpeg',"satohasdltua.jpg");
 
-    $url = 'http://www.alio.lt/public/photos/display.html?id=' . $skelbimoID;
-    $html = cURL_ping_html($url, $referer, $UA, $ch);
-}
+$query = array('file' => $cfile);
+$html = cURL_post($url, $referer, $UA, $query, $ch); // post action
+unset($query);
+
+$url = 'http://www.alio.lt/public/photos/display.html?id=' . $skelbimoID;
+$referer = 'http://alio.lt/mano_skelbimai.html';
+$html = cURL_ping_html($url, $referer, $UA, $ch);
+//}
 
 
 
@@ -188,7 +189,7 @@ $post_data = array (
 
 //$query = http_build_query($post_data);
 //echo $query . "\n";
-
+unset($query);
 http_build_query_for_curl($post_data, $query);
 
 
@@ -202,7 +203,7 @@ curl_setopt_array($ch, array(
 ); */
 
 
- //$url = 'ssj.uzrasai.lt/manowebas/cURL%20Testing%20Grounds/Test1/POST_Debug.php'; // Debug the POST
+//$url = 'ssj.uzrasai.lt/manowebas/cURL%20Testing%20Grounds/Test1/POST_Debug.php'; // Debug the POST
 $url = 'http://www.alio.lt/public/advertisement/save.html';
 $referer = 'http://www.alio.lt/iveskite_skelbima.html?id=1553';
 
@@ -210,13 +211,11 @@ $referer = 'http://www.alio.lt/iveskite_skelbima.html?id=1553';
 $html = cURL_post($url, $referer, $UA, $query, $ch); // post action
 echo($html[1]); // show that the post works
 
-
 // logout page settings
 $url = 'http://www.alio.lt/atsijungimas.html';
 $referer = 'http://www.alio.lt/mano_skelbimai.html';
 $html = cURL_ping_html($url, $referer, $UA, $ch); // logout action
 //echo($html[1]); // show that the logout works
-unset($query);
 
 // Close the connection
 curl_close($ch);
