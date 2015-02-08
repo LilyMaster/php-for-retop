@@ -70,11 +70,27 @@ if ($html[0] == "ok") {
 $url = 'http://www.alio.lt/public/photos/uploadifyupload.html?id=' . $skelbimoID;
 $referer = 'http://www.alio.lt/iveskite_skelbima.html?id=1553';
 
-$dir = DOCROOT . 'images/';
+$dir = DOCROOT . 'images/'; // Iš kur imami paveiksliukai
 $visiFailai = array_slice(scandir($dir), 2);
 foreach ($visiFailai as $failas){
+    $ext = pathinfo($dir . $failas, PATHINFO_EXTENSION);
+    switch ($ext) {
+        case 'jpg':
+        case 'jpeg':
+            $mime = 'image/jpeg';
+            break;
+        case 'gif':
+            $mime = 'image/gif';
+            break;
+        case 'png':
+            $mime = 'image/png';
+            break;
+        default:
+            $mime = 'application/octet-stream';
+            echo "\n Image type not known \n";
+    }
     $url = 'http://www.alio.lt/public/photos/uploadifyupload.html?id=' . $skelbimoID;
-    $cfile = curl_file_create($dir . "$failas",'image/jpeg',"$failas");
+    $cfile = curl_file_create($dir . "$failas", $mime, "$failas");
     //$cfile = curl_file_create("cats.jpg",'image/jpeg',"satohasdltua.jpg");
     $query = array('file' => $cfile);
     $html = cURL_post($url, $referer, $UA, $query, $ch); // post action
@@ -84,9 +100,7 @@ foreach ($visiFailai as $failas){
     $html = cURL_ping_html($url, $referer, $UA, $ch);
 }
 
-
-
-
+//print_r($visiFailai);
 
 $post_data = array (
     'showgooglemaps' => 0,
