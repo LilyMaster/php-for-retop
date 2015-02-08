@@ -1,0 +1,44 @@
+showgooglemaps	1
+gm_lat	55.9182584
+gm_lng	23.344077200000015
+house_number
+data[id][adresas_1]	229001
+data[id][adresas_2]	250582
+data[id][adresas_3]	11812
+data[text][kambario_plota...	25
+data[id][buto_aukstas]	100018890
+data[text][kitos_pastabos...	Paprastas namukas su kambariais.
+data[id][nuom_kambariu_sk...	100011333
+data[id][busto_bukle]	100009023
+data[id][kambariu_sk_bute...	100011334
+data[id][namo_tipas]	100009036
+video_id
+showgooglemaps	1
+house_number
+packet[43][price]	59212
+packet[value][mini_packet...	0
+packet[44][price]	59222
+packet[value][optimal_pac...	0
+packet[45][price]	59232
+packet[value][vip_packet]	0
+expire_time	0
+current_time	1423425850
+packet[104][price]	61182
+siteadvertise[value][104]	0
+packet[105][price]	61192
+siteadvertise[value][105]	0
+packet[117][price]	61432
+siteadvertise[value][117]	0
+data[text][kaina_1]	850
+data[text][kaina_4]	2935
+data[text][kaina_2]	EUR
+data[id][nuomotojas]	100011023
+data[text][mobilus_telefo...	+37064379063
+mail[email]	lilymaster@gmail.com
+ntspecial	0
+expire_time
+current_time	1423425850
+isEdit
+isCreate	1
+ad_id	51945281
+category_id	1553
