@@ -96,8 +96,8 @@ foreach ($visiFailai as $failas){
     $html = cURL_post($url, $referer, $UA, $query, $ch); // post action
     unset($query);
 
-    $url = 'http://www.alio.lt/public/photos/display.html?id=' . $skelbimoID;
-    $html = cURL_ping_html($url, $referer, $UA, $ch);
+    //$url = 'http://www.alio.lt/public/photos/display.html?id=' . $skelbimoID;
+    //$html = cURL_ping_html($url, $referer, $UA, $ch);
 }
 
 //print_r($visiFailai);
