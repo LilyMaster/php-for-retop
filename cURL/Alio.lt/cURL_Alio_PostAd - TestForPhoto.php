@@ -1,7 +1,8 @@
 <?php
-define('DOCROOT', realpath(dirname(__FILE__)).'/');
-include_once(DOCROOT . '/simple_html_dom.php');
-include_once(DOCROOT . '/../includes/cURL_functions.php');
+define('DOCROOT', realpath(dirname(__FILE__)).'/'); echo DOCROOT."\n";
+define('WEBROOT', $_SERVER['DOCUMENT_ROOT'].'/'); echo WEBROOT;
+include_once(WEBROOT . 'includes/simple_html_dom.php');
+include_once(WEBROOT . 'includes/cURL_functions.php');
 
 function http_build_query_for_curl( $arrays, &$new = array(), $prefix = null ) {
 
@@ -43,6 +44,7 @@ $query = http_build_query($post_data); // Paprastam application/x-www-form-urlen
 // login action
 $html = cURL_post($url, $referer, $UA, $query, $ch); // login action
 echo($html[1]); // show that the login works
+unset($query);
 
 //$header = array("Content-Type:application/x-www-form-urlencoded");
 //$header = array("Content-Type:multipart/form-data");
@@ -54,7 +56,7 @@ $html = cURL_ping_html($url, $referer, $UA, $ch);
 
 $skelbimoID = 0;
 if ($html[0] == "ok") {
-    $htmlDOM = str_get_html($gotHTML[1]);
+    $htmlDOM = str_get_html($html[1]);
     $gautasHTML_Istrauka = $htmlDOM->find('input[name=ad_id]');
     if (isset($gautasHTML_Istrauka[0]->value)) {
         $skelbimoID = $gautasHTML_Istrauka[0]->value;
@@ -65,12 +67,32 @@ if ($html[0] == "ok") {
 }
 
 // php >= 5.5
-//$file = curl_file_create('testfile.jpg', 'image/jpeg', "test_file_name");
+$url = 'http://www.alio.lt/public/photos/uploadifyupload.html?id=' . $skelbimoID;
+$referer = 'http://www.alio.lt/iveskite_skelbima.html?id=1553';
+
+$dir = DOCROOT . 'images/';
+$visiFailai = array_slice(scandir($dir), 2);
+//foreach ($visiFailai as $failas){
+    //$cfile = curl_file_create("$failas",'image/jpeg',"$failas");
+    $cfile = curl_file_create("cats.jpg",'image/jpeg',"satohasdltua.jpg");
+
+    $query = array('file' => $cfile);
+    $html = cURL_post($url, $referer, $UA, $query, $ch); // post action
+    unset($query);
+
+    $url = 'http://www.alio.lt/public/photos/display.html?id=' . $skelbimoID;
+    $referer = 'http://alio.lt/mano_skelbimai.html';
+    $html = cURL_ping_html($url, $referer, $UA, $ch);
+//}
+
+
+
+
 
 $post_data = array (
     'showgooglemaps' => 0,
-    'gm_lat' => 50.68939, // TODO gauti koordinates, geriausiu atveju - kliento pusėje: https://developers.google.com/maps/documentation/geocoding/?csw=1
-    'gm_lng' => 40.28002,
+    'gm_lat' => 55.914053, // TODO gauti koordinates, geriausiu atveju - kliento pusėje: https://developers.google.com/maps/documentation/geocoding/?csw=1
+    'gm_lng' => 23.246462,
     'house_number' => '45',
     'data' => array(
         'id' => array(
@@ -193,7 +215,7 @@ echo($html[1]); // show that the post works
 $url = 'http://www.alio.lt/atsijungimas.html';
 $referer = 'http://www.alio.lt/mano_skelbimai.html';
 $html = cURL_ping_html($url, $referer, $UA, $ch); // logout action
-echo($html[1]); // show that the logout works
+//echo($html[1]); // show that the logout works
 
 // Close the connection
 curl_close($ch);
