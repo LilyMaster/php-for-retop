@@ -33,6 +33,9 @@ while($row = $result->fetch_assoc())
     $data[] = $row; // TODO po šito galima perrikiuoti array'jus pagal nurodytą atnaujinimo tvarką, pvz $data['eilesNr']
 }
 
+$result->free();
+$conn->close();
+
 $logFile = fopen('AutomatasRenew.log', 'a');
 fwrite($logFile, date(DATE_RFC2822) . " Pradedamas automatas \n\n");
 fclose($logFile);
