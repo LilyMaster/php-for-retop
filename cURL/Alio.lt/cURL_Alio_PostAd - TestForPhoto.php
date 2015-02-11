@@ -2,7 +2,7 @@
 define('DOCROOT', realpath(dirname(__FILE__)).'/'); echo DOCROOT."\n";
 define('WEBROOT', $_SERVER['DOCUMENT_ROOT'].'/'); echo WEBROOT;
 include_once(WEBROOT . 'includes/simple_html_dom.php');
-include_once(WEBROOT . 'includes/cURL_functions.php');
+include_once(WEBROOT . 'includes/php_functions.php');
 
 function http_build_query_for_curl( $arrays, &$new = array(), $prefix = null ) {
 
@@ -28,7 +28,7 @@ $ch = curl_init();
 $url = 'http://alio.lt';
 $referer = 'http://alio.lt';
 $html = cURL_ping_html($url, $referer, $UA, $ch);
-//echo $gotHTML[1];
+//echo $ghtml[1];
 
 //$url = 'ssj.uzrasai.lt/manowebas/cURL%20Testing%20Grounds/Test1/POST_Debug.php'; // Debug the POST
 $url = 'http://www.alio.lt/jungiamasi.html';
@@ -36,7 +36,7 @@ $referer = 'http://www.alio.lt/prisijungimas.html';
 // POST data
 $post_data = array (
     'login' => 1,
-    'password' => 'kiaule',
+    'password' => 'manopw',
     'userphone' => 'lilymaster@gmail.com'
 ); // POST data
 // build query
@@ -66,6 +66,8 @@ if ($html[0] == "ok") {
     }
 }
 
+
+// čia nuotraukos
 // php >= 5.5
 $url = 'http://www.alio.lt/public/photos/uploadifyupload.html?id=' . $skelbimoID;
 $referer = 'http://www.alio.lt/iveskite_skelbima.html?id=1553';
@@ -101,7 +103,7 @@ foreach ($visiFailai as $failas){
 }
 
 //print_r($visiFailai);
-
+// čia pats skelbimas
 $post_data = array (
     'showgooglemaps' => 0,
     'gm_lat' => 55.914053, // TODO gauti koordinates, geriausiu atveju - kliento pusėje: https://developers.google.com/maps/documentation/geocoding/?csw=1

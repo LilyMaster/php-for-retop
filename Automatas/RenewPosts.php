@@ -1,9 +1,13 @@
 <?php
 define('DOCROOT', realpath(dirname(__FILE__)).'/');
 define('WEBROOT', $_SERVER['DOCUMENT_ROOT'].'/');
+
 include_once(DOCROOT . 'includes/simple_html_dom.php');
 include_once(DOCROOT . 'includes/php_functions.php');
 include_once('config.php');
+
+date_default_timezone_set('Europe/Vilnius');
+set_time_limit(200);
 
 $server = $sql_details['host'];
 $username = $sql_details['user'];
@@ -37,16 +41,16 @@ $result->free();
 $conn->close();
 
 $logFile = fopen('AutomatasRenew.log', 'a');
-fwrite($logFile, date(DATE_RFC2822) . " Pradedamas automatas \n\n");
+fwrite($logFile, date(DATE_RFC2822) . " :: Pradedamas automatas \n\n");
 fclose($logFile);
 
 foreach($data as $value){
     $logFile = fopen('AutomatasRenew.log', 'a');
-    $result = posts_renew('', $value['login'], $value['password']);
-    fwrite($logFile, $result);
+    $PostResult = posts_renew('', $value['login'], $value['password']);
+    fwrite($logFile, $PostResult['msg']);
     fclose($logFile);
 }
 
 $logFile = fopen('AutomatasRenew.log', 'a');
-fwrite($logFile, date(DATE_RFC2822) . " Automatas darbą baigė. \n\n");
+fwrite($logFile, date(DATE_RFC2822) . " :: Automatas darbą baigė. \n\n");
 fclose($logFile);

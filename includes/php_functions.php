@@ -83,6 +83,12 @@ Nelabai taip: 1 stores the info, 0 straightly does 'echo curl_exec($ch);'*/
     return $info;
 } // Sušeriam kokiai tai formai info.
 
+function build_skelbimuIDs_atnaujinimui($skelbimuIDs){
+    $url = 'http://www.alio.lt/public/advertisement/renew.html?categoryId=&ad_id=';
+    $url .= implode($skelbimuIDs, ",");
+    return $url;
+}
+
 function posts_renew($puslapis='', $login, $password){
     $UA = getUA(); // Nustatome "User-Agent: "
     $ch = curl_init();
@@ -139,11 +145,7 @@ function posts_renew($puslapis='', $login, $password){
         $psl++;
     } while (!$yraErroras); // galima padaryti "while ($psl <= $norimasDarApdorotiPsl);"
 
-    function build_skelbimuIDs_atnaujinimui($skelbimuIDs){
-        $url = 'http://www.alio.lt/public/advertisement/renew.html?categoryId=&ad_id=';
-        $url .= implode($skelbimuIDs, ",");
-        return $url;
-    }
+
 
     //atnaujinami skelbimai pagal IDs
     $url = build_skelbimuIDs_atnaujinimui($skelbimuIDs);
@@ -159,7 +161,7 @@ function posts_renew($puslapis='', $login, $password){
     curl_close($ch);
 
     $taskResult = array();
-    $taskResult['msg'] = date(DATE_RFC2822). ' Skelbimai vartotojui ' . $login . 'atnaujinti. ' . "\r\n";
+    $taskResult['msg'] = date(DATE_RFC2822). ' :: Skelbimai vartotojui login: ' . $login . ' atnaujinti. ' . "\r\n";
     return $taskResult;
 }
 

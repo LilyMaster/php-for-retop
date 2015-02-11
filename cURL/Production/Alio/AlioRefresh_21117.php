@@ -1,7 +1,8 @@
 <?php
 define('DOCROOT', realpath(dirname(__FILE__)).'/');
-include_once(DOCROOT . '/../../includes/simple_html_dom.php');
-include_once(DOCROOT . '/../../includes/cURL_functions.php');
+define('WEBROOT', $_SERVER['DOCUMENT_ROOT'].'/');
+include_once(WEBROOT . 'includes/simple_html_dom.php');
+include_once(WEBROOT . 'includes/php_functions.php');
 
 $UA = getUA(); // Nustatome "User-Agent: "
 

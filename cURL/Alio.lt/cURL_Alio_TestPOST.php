@@ -1,7 +1,7 @@
 <?php
 
 include_once(DOCROOT . 'simple_html_dom.php');
-include_once(DOCROOT . '/../includes/cURL_functions.php');
+include_once(DOCROOT . '/../includes/php_functions.php');
 
 function echocURLInfo($ch) {
     echo '<pre>';

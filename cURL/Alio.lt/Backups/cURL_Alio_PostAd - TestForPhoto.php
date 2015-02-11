@@ -2,7 +2,7 @@
 define('DOCROOT', realpath(dirname(__FILE__)).'/'); echo DOCROOT."\n";
 define('WEBROOT', $_SERVER['DOCUMENT_ROOT'].'/'); echo WEBROOT;
 include_once(WEBROOT . 'includes/simple_html_dom.php');
-include_once(WEBROOT . 'includes/cURL_functions.php');
+include_once(WEBROOT . 'includes/php_functions.php');
 
 function http_build_query_for_curl( $arrays, &$new = array(), $prefix = null ) {
 

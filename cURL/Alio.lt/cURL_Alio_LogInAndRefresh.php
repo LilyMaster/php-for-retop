@@ -1,7 +1,7 @@
 <?php
 define('DOCROOT', realpath(dirname(__FILE__)).'/');
 include_once(DOCROOT . '/../includes/simple_html_dom.php');
-include_once(DOCROOT . '/../includes/cURL_functions.php');
+include_once(DOCROOT . '/../includes/php_functions.php');
 
 $UA = getUA(); // Nustatome "User-Agent: "
 

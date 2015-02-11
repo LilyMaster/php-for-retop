@@ -1,7 +1,7 @@
 <?php
 define('DOCROOT', realpath(dirname(__FILE__)).'/');
 include_once(DOCROOT . '/simple_html_dom.php');
-include_once(DOCROOT . '/../includes/cURL_functions.php');
+include_once(DOCROOT . '/../includes/php_functions.php');
 
 function http_build_query_for_curl( $arrays, &$new = array(), $prefix = null ) {
 

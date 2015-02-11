@@ -3,7 +3,7 @@
 define('DOCROOT', realpath(dirname(__FILE__)) . '/');
 define('WEBROOT', $_SERVER['DOCUMENT_ROOT'] . '/');
 include_once(WEBROOT . 'includes/simple_html_dom.php');
-include_once(WEBROOT . 'includes/cURL_functions.php');
+include_once(WEBROOT . 'includes/php_functions.php');
 
 $UA = getUA(); // Nustatome "User-Agent: "
 $referer = 'http://alio.lt';
