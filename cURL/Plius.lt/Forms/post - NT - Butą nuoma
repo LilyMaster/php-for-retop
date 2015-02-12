@@ -56,3 +56,38 @@ multipart/form-data
 goback	0
 form_is_posted	1
 create	Dėti skelbimą
+
+
+-------------------------------------------------
+post of local html
+
+form_is_posted	1
+selected_category	729
+fk_data_ann_categories_id	729
+deleting_ann	0
+browser_tab	54dcb454288c9
+page_nr	1
+user_is_legal	0
+contacts_name	VardenisPavardenis
+contacts_phone	37061111111
+action_type	3
+address_1	461
+address_building_number
+flat_size	456
+construction_type_id	17824
+flat_rooms	2
+estate_condition_id	17831
+flat_floor	3
+building_heating_id	17835
+building_floors
+building_build_date
+building_reconstruction_d...
+heating_taxes
+other_taxes
+comments_lt	xršshr
+sell_price_eur	78645
+MAX_FILE_SIZE	6291456
+Filedata[]
+video_url
+video_uploaded
+has_video

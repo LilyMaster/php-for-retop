@@ -1,0 +1,78 @@
+Array
+(
+    [form_is_posted] => 1
+    [selected_category] => 729
+    [fk_data_ann_categories_id] => 729
+    [deleting_ann] => 0
+    [browser_tab] => 54dcb454288c9
+    [page_nr] => 1
+    [user_is_legal] => 0
+    [contacts_name] => Vardas
+    [contacts_phone] => 370645432125
+    [action_type] => 3
+    [address_1] => 43
+    [address_building_number] => 55
+    [flat_size] => 75
+    [construction_type_id] => 17825
+    [flat_rooms] => 2
+    [estate_condition_id] => 17831
+    [flat_floor] => 3
+    [building_heating_id] => 17834
+    [building_floors] => 5
+    [building_build_date] => 1972
+    [building_reconstruction_date] => 2004
+    [heating_taxes] => 200
+    [other_taxes] => 350
+    [comments_lt] => Komentarai!
+    [sell_price_eur] => 750
+    [f1] => 1
+    [f2] => 1
+    [f3] => 1
+    [f4] => 1
+    [f5] => 1
+    [f6] => 1
+    [f7] => 1
+    [f8] => 1
+    [f9] => 1
+    [f10] => 1
+    [f11] => 1
+    [f12] => 1
+    [f13] => 1
+    [MAX_FILE_SIZE] => 6291456
+    [video_url] =>
+    [video_uploaded] =>
+    [has_video] =>
+    [save] => IÅ¡saugoti
+)
+Array
+(
+    [Filedata] => Array
+        (
+            [name] => Array
+                (
+                    [0] =>
+                )
+
+            [type] => Array
+                (
+                    [0] =>
+                )
+
+            [tmp_name] => Array
+                (
+                    [0] =>
+                )
+
+            [error] => Array
+                (
+                    [0] => 4
+                )
+
+            [size] => Array
+                (
+                    [0] => 0
+                )
+
+        )
+
+)

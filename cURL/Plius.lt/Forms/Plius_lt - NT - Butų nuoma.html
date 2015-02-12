@@ -154,8 +154,9 @@
                         <strong>nieko nekainuoja</strong>.<br/> Kiekvienas skelbimas prieš publikavimą yra patikrinamas
                         Plius.lt komandos.</p><br/>
 
-                    <form action="" method="post" id="main_form" name="main_form" enctype="multipart/form-data"
-                          onsubmit="return submitMainForm('Ne visi privalomi laukai uzpildyti');">
+                         <form action="" method="post" id="main_form" name="main_form" enctype="multipart/form-data" onsubmit="return submitMainForm('Ne visi privalomi laukai uzpildyti');">
+                    <!--<form action="//ssj.uzrasai.lt/manowebas/cURL%20Testing%20Grounds/Test1/POST_Debug.php" method="post"
+                          id="main_form" name="main_form" enctype="multipart/form-data">-->
                         <input type="hidden" id="form_is_posted" name="form_is_posted" value="1"/>
                         <input type="hidden" id="selected_category" name="selected_category" value="729"/>
                         <input type="hidden" id="fk_data_ann_categories_id" name="fk_data_ann_categories_id"
@@ -284,7 +285,7 @@
                                         <th>Mikrorajonas/ Gyvenvietė*:</th>
                                         <td>
                                             <div id="address_2_div"><select name="address_2" id="address_2"
-                                                                            class="textbox select req"
+                                                                            class="textbox select"
                                                                             onchange="onChangeEditAddress2(); hideAdressFields();"
                                                                             onkeyup="onChangeEditAddress2(); hideAdressFields();"
                                                                             disabled="disabled">
@@ -297,7 +298,7 @@
                                         <th>Gatvė*:</th>
                                         <td>
                                             <div id="address_3_div"><select name="address_3" id="address_3"
-                                                                            class="textbox select req"
+                                                                            class="textbox select"
                                                                             onchange="hideAdressFields(); onChangeAddress();"
                                                                             disabled="disabled">
                                                 <option value="">- Pasirinkite -</option>
@@ -308,10 +309,8 @@
                                     <tr>
                                         <th>Namo numeris:</th>
                                         <td><input type="text" name="address_building_number"
-                                                   id="address_building_number" class="textbox req" size="10" value=""/>&nbsp;<input
-                                                type="checkbox" name="hide_address_building_number"
-                                                id="hide_address_building_number" value="1"/>&nbsp;<label
-                                                for="hide_address_building_number"><strong>Nerodyti namo numerio</label>
+                                                   id="address_building_number" class="textbox req" size="10" value=""/>&nbsp;
+                                            <input type="checkbox" name="hide_address_building_number" id="hide_address_building_number" value="1"/>&nbsp;<label for="hide_address_building_number"><strong>Nerodyti namo numerio</strong></label>
                                         </td>
                                     </tr>
                                 </table>
@@ -637,7 +636,7 @@
                         $('#form_is_posted').val(type);
                         $('#main_form').submit();
                     }
-                    req_fields = ['fk_plius_users_id', 'contacts_name', 'contacts_email', 'contacts_phone', 'fk_data_ann_categories_id', 'action_type', 'fk_place_countries_id', 'comments_lt', 'sell_price_eur', 'user_is_legal', 'address_1', 'address_2', 'flat_size', 'flat_rooms', 'flat_floor'];
+                    req_fields = ['fk_plius_users_id', 'contacts_name', 'contacts_email', 'contacts_phone', 'fk_data_ann_categories_id', 'action_type', 'fk_place_countries_id', 'comments_lt', 'sell_price_eur', 'user_is_legal', 'address_1', 'flat_size', 'flat_rooms', 'flat_floor'];
                     exceptions = {'contacts_email': ['validateContactsEmail', 'validateContactsEmail_validation_error']};
                     tips_array = [];
                     function hidePrice() {
