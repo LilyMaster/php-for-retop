@@ -1,0 +1,8 @@
+http://www.skelbiu.lt/users/signin?nick=%2B37064379063&password=QyJaeu&step=1
+http://www.skelbiu.lt/users/signin
+
+paprastas url-encoded
+
+nick	+37064379063
+password	QyJaeu
+step	1

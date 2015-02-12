@@ -1,0 +1,44 @@
+adsType	1
+description_default_headi...	Tarpininkaujamas butas
+description_default_body	Siūlau ilgam išsinuomoti būtą.
+price	7500
+image[]
+category_id	322
+category_price	2.90
+step	2
+show_skelbti	1
+redirectionURL	/naujas-skelbimas/patalpink/322/step2
+type	1
+mapCoor
+location_id	265
+district	11
+quartal	63
+street	29602
+houseNumber	15
+withoutmap	1
+space	75
+rooms	2
+status	3
+building	2
+floor	7
+height	13
+year	1979
+warm_system[]	2
+features[]	1
+features[]	12
+features[]	13
+features[]	17
+features[]	22
+features[]	23
+features[]	28
+userType	1
+phone	+37064379063
+email	lilymaster@gmail.com
+ad_not_show_email	1
+no_newsletter	1
+name
+skype
+url
+days	0
+level	0
+highlightDays	0
