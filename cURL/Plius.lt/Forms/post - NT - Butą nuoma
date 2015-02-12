@@ -1,0 +1,58 @@
+http://www.plius.lt/redaguoti/nekilnojamasis-turtas/butu-nuoma?browser_tab=54dcb5093cda6&
+
+http://www.plius.lt/redaguoti/nekilnojamasis-turtas/butu-nuoma - galima ir tiek terašyti.
+
+browser_tab randamas iš <input type="hidden" name="browser_tab" id="browser_tab" value="54dcb9bdd0c33" /> pagal jau nustatytą funkciją.
+
+
+
+multipart/form-data
+
+form_is_posted	1
+selected_category	729
+fk_data_ann_categories_id	729
+deleting_ann	0
+browser_tab	54dcb5093cda6
+page_nr	1
+user_is_legal	0
+contacts_name	VardenisPavardenis
+contacts_phone	37061111111
+action_type	3
+address_1	259
+address_2	3_125
+address_3	16819
+address_building_number	85
+flat_size	75
+construction_type_id	17824
+flat_rooms	2
+estate_condition_id	17830
+flat_floor	3
+building_heating_id	17836
+building_floors	5
+building_build_date	1984
+building_reconstruction_d...	2004
+heating_taxes	200
+other_taxes	350
+comments_lt	Tekstas komentuojant
+sell_price_eur	850
+f3	1
+f5	1
+f10	1
+f11	1
+f13	1
+MAX_FILE_SIZE	6291456
+Filedata[]
+video_url
+video_uploaded
+has_video
+
+
+STEP 2:
+
+http://www.plius.lt/redaguoti/redaguoti/patvirtinti?browser_tab=54dcb5093cda6
+
+multipart/form-data
+
+goback	0
+form_is_posted	1
+create	Dėti skelbimą

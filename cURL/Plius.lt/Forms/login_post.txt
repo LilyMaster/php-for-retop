@@ -1,0 +1,8 @@
+http://www.plius.lt/pasas/registracija?is_login=1&login_name=lilymaster%40gmail.com&login_password=kiaule
+http://www.plius.lt/pasas/registracija
+
+paprastas form-url-encoded
+
+is_login	1
+login_name	lilymaster@gmail.com
+login_password	kiaule

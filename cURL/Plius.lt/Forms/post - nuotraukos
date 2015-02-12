@@ -1,0 +1,15 @@
+Referrer: http://www.plius.lt/redaguoti/nekilnojamasis-turtas/butu-nuoma?browser_tab=54dcb5093cda6&
+
+----------------------------149132839313146
+Content-Disposition: form-data; name="form_is_posted"
+
+1
+-----------------------------149132839313146
+Content-Disposition: form-data; name="browser_tab"
+
+54dcb5093cda6
+-----------------------------149132839313146
+Content-Disposition: form-data; name="Filedata"; filename="0adc3b537d80cb3883ad6fa22ed99f3e.png"
+Content-Type: image/png
+
+Veikia praktiškai taip pat, kaip ir Alio.lt, tiesiog pridėti dar ir form_is_posted = 1 bei browser_tab = wtfskaičius.
