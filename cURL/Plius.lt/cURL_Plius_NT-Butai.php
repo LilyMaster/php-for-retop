@@ -47,7 +47,7 @@ if ($html[0] == "ok") {
         echo "Nėra nurodyto vardo";
     }
 }
-
+// TODO patikrinti, ar veikia nuotraukų kėlimas
 /*
 // čia nuotraukos
 // php >= 5.5
