@@ -96,7 +96,7 @@ $post_data = array (
     'page_nr' => 1,
     'user_is_legal' => 0, // ar privatus = 0, ar juridinis = 1
     'contacts_name' => 'Vardas Pavardauskas',
-    'contacts_phone' => '370654123450',
+    'contacts_phone' => 37060012345,
     'action_type' => 3,
     'address_1' => 259, // Miestas
     'address_2' => '3_125', // Rajonas
@@ -113,27 +113,34 @@ $post_data = array (
     'building_reconstruction_date' => 2004, // building_reconstruction_d... ??
     'heating_taxes' => 200, // mokesčiai už šildymą
     'other_taxes' => 100, // komunaliniai mokesčiai
-    'comments_lt' => 'Nedidelis butukas', // Skelbimo aprašymas
-    'sell_price_eur' => 852, // Kaina
+    'comments_lt' => 'Didelis butukas', // Skelbimo aprašymas
+    'sell_price_eur' => 654, // Kaina
     'f3' => 1, // Papildomos varnėlės |.|
     'f5' => 1,
     'f10' => 1,
     'f11' => 1,
     'f13' => 1,
     'MAX_FILE_SIZE' => 6291456, // tik teorinis?
-    'Filedata[]' => '',
+    'Filedata[]"; filename=""'."\r\n".'Content-Type: application/octet-stream' => '',
     'video_url' => '',
     'video_uploaded' => '',
-    'has_video' => ''
+    'has_video' => ''/*,
+    'save' => 'Išsaugoti'*/
 );
+
 $query = $post_data; // nereikia encodinti niekur, nes reikia form-data
 
 //$url = 'ssj.uzrasai.lt/manowebas/cURL%20Testing%20Grounds/Test1/POST_Debug.php'; // Debug the POST
-$url = "http://plius.lt/redaguoti/nekilnojamasis-turtas/butu-nuoma?browser_tab=$skelbimoID&";
+$url = "http://www.plius.lt/redaguoti/nekilnojamasis-turtas/butu-nuoma?browser_tab=$skelbimoID&";
 $referer = "http://www.plius.lt/redaguoti/nekilnojamasis-turtas/butu-nuoma?browser_tab=$skelbimoID&";
-$html = cURL_post($url, $referer, $UA, $query, $ch); // post action
+// $header = array("Content-Type:application/octet-stream");
+$html = cURL_post($url, $referer, $UA, $query, $ch/*, $header*/); // post action
 echo($html[1]); // show that the post works
 unset($query);
+
+/*$url = "http://www.plius.lt/redaguoti/patvirtinti?browser_tab=$skelbimoID";
+$html = cURL_ping_html($url, $referer, $UA, $ch); // post action
+echo($html[1]); // show that the post works*/
 
 $post_data = array (
     'goback' => 0,
@@ -142,7 +149,7 @@ $post_data = array (
 );
 $query = $post_data;
 
-$url = "http://www.plius.lt/redaguoti/redaguoti/patvirtinti?browser_tab=$skelbimoID";
+$url = "http://www.plius.lt/redaguoti/patvirtinti?browser_tab=$skelbimoID";
 $html = cURL_post($url, $referer, $UA, $query, $ch); // post action
 echo($html[1]); // show that the post works
 unset($query);
