@@ -63,7 +63,9 @@ Nelabai taip: 1 stores the info, 0 straightly does 'echo curl_exec($ch);'*/
             CURLOPT_POSTFIELDS => $postoTurinys, //Set the post parameters
             CURLOPT_COOKIEJAR => 'cookie.txt', //Handle cookies for the loginCURLOPT_FILE => "@$file"
             CURLOPT_COOKIEFILE => 'cookie.txt',
-            CURLOPT_AUTOREFERER => 1
+            CURLOPT_AUTOREFERER => 1/*,
+            CURLOPT_HEADER => 1,
+            CURLINFO_HEADER_OUT => 1*/
         )
     );
 
@@ -164,5 +166,21 @@ function posts_renew($puslapis='', $login, $password){
     $taskResult['msg'] = date(DATE_RFC2822). ' :: Skelbimai vartotojui login: ' . $login . ' atnaujinti. ' . "\r\n";
     return $taskResult;
 }
+
+function http_build_query_for_curl( $arrays, &$new = array(), $prefix = null ) {
+
+    if ( is_object( $arrays ) ) {
+        $arrays = get_object_vars( $arrays );
+    }
+
+    foreach ( $arrays as $key => $value ) {
+        $k = isset( $prefix ) ? $prefix . '[' . $key . ']' : $key;
+        if ( is_array( $value ) OR is_object( $value )  ) {
+            http_build_query_for_curl( $value, $new, $k );
+        } else {
+            $new[$k] = $value;
+        }
+    }
+} // Daugiausiai alio, kur assoc masyvas verčiamas stringu paprastu
 
 ?>
