@@ -1,24 +1,8 @@
 <?php
-define('DOCROOT', realpath(dirname(__FILE__)).'/'); echo DOCROOT."\n";
-define('WEBROOT', $_SERVER['DOCUMENT_ROOT'].'/'); echo WEBROOT;
+define('DOCROOT', realpath(dirname(__FILE__)).'/');
+define('WEBROOT', $_SERVER['DOCUMENT_ROOT'].'/');
 include_once(WEBROOT . 'includes/simple_html_dom.php');
 include_once(WEBROOT . 'includes/php_functions.php');
-
-function http_build_query_for_curl( $arrays, &$new = array(), $prefix = null ) {
-
-    if ( is_object( $arrays ) ) {
-        $arrays = get_object_vars( $arrays );
-    }
-
-    foreach ( $arrays as $key => $value ) {
-        $k = isset( $prefix ) ? $prefix . '[' . $key . ']' : $key;
-        if ( is_array( $value ) OR is_object( $value )  ) {
-            http_build_query_for_curl( $value, $new, $k );
-        } else {
-            $new[$k] = $value;
-        }
-    }
-}
 
 $UA = getUA(); // Nustatome "User-Agent: "
 
